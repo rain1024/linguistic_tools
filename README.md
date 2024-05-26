@@ -1,6 +1,6 @@
 # Linguistic Tools
 
-This project is a set of linguistic tools designed to assist my **lovely friend** with various language-related tasks.
+This project is a set of linguistic tools designed to assist my **lovely friend** 💕 with various language-related tasks.
 
 ## Filter Words
 
