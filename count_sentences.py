@@ -1,11 +1,12 @@
 import os
 import docx
-
+from underthesea import sent_tokenize
 
 def count_sentences(input_file):
     document = docx.Document(input_file)
     texts = []
-    texts = [paragraph.text for paragraph in document.paragraphs if paragraph.text.strip()]
+    texts = [sent_tokenize(paragraph.text) for paragraph in document.paragraphs if paragraph.text.strip()]
+    texts = [i for sublist in texts for i in sublist]
     tmp_folder = "tmp"
     if not os.path.exists(tmp_folder):
         os.makedirs(tmp_folder)    
